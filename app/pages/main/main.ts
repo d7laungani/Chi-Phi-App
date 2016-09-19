@@ -26,9 +26,14 @@ export class MainPage {
     }
 
     launchWebsite() {
-        InAppBrowser.open("https://chiphiutd.com/", "_blank");
+      InAppBrowser.open("https://chiphiutd.com/", "_blank");
 
     }
+
+      launchForums() {
+        InAppBrowser.open("https://chiphiutd.com/forums", "_blank");
+
+      }
 
     launchWiki () {
         InAppBrowser.open("https://chiphiutd.com/wiki/index.php?title=Main_Page ","_blank ");
