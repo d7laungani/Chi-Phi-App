@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Calendar</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+  <ion-list>
+    <ion-card *ngFor="let event of events "  >
+
+
+        <ion-item item-divider > {{event.summary}} </ion-item>
+
+        <ion-item item-text-wrap>
+          <p>Location: {{event.location}}</p>
+          <p><strong>When: {{ event.start.dateTime | date: 'dd/MM/yyyy h:mm a'}} </strong></p>
+        </ion-item>
+
+    </ion-card>
+  </ion-list>
+</ion-content>

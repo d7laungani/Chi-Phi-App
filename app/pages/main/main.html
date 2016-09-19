@@ -1,0 +1,119 @@
+
+<ion-header>
+
+<ion-navbar *navbar *ngIf="!auth.authenticated()">
+  <ion-title center text-center>Chi Phi Psi Zeta</ion-title>
+  <ion-navbar-buttons side="right">
+    <button (click)="auth.login()">Login</button>
+  </ion-navbar-buttons>
+</ion-navbar>
+<ion-navbar *navbar *ngIf="auth.authenticated()">
+  <ion-title>Chi Phi Psi Zeta</ion-title>
+
+</ion-navbar>
+</ion-header>
+
+
+<ion-content  class = "home-container"  scroll = "false" >
+  <ion-row class = "header">
+    <ion-col center text-center>
+      <img src="images/Chakett.png" style="height:200px; padding: 5px 5px 5px 5px; align = middle; " />
+
+    </ion-col>
+  </ion-row>
+
+
+
+    <ion-row class = "icon-row">
+        <ion-col center text-center>
+            <button (click)= "launchGreeksuite()" round outline>
+              <ion-icon name="card"></ion-icon>
+            </button>
+            <ion-label center text-center>GreekSuite</ion-label>
+        </ion-col>
+
+        <ion-col center text-center>
+            <button (click)= "launchWiki()" round outline>
+              <div class="fa fa-wikipedia-w"></div>
+            </button>
+            <ion-label center text-center>Wiki</ion-label>
+        </ion-col>
+
+
+        <ion-col center text-center>
+            <ion-buttons website>
+                <button (click)= "launchWebsite()" round outline >
+                    <ion-icon name="globe"></ion-icon>
+                </button>
+
+            </ion-buttons>
+            <ion-label center text-center>Website</ion-label>
+        </ion-col>
+    </ion-row>
+
+    <ion-row class = "icon-row">
+        <ion-col center text-center>
+            <ion-buttons   calendar>
+                <button (click)= "launchEvents()" round outline >
+                    <ion-icon name="calendar"></ion-icon>
+                </button>
+
+            </ion-buttons>
+            <ion-label center text-center>Calendar</ion-label>
+        </ion-col>
+
+        <ion-col center text-center>
+          <button (click)= "launchBoysandGirls()" round outline>
+              <ion-icon name="heart"></ion-icon>
+            </button>
+            <ion-label center text-center>Boys and Girls Club</ion-label>
+        </ion-col>
+
+
+        <ion-col center text-center>
+          <button (click)= "launchGallery()" round outline >
+              <ion-icon name="camera"></ion-icon>
+
+            </button>
+          <ion-label center text-center>Gallery</ion-label>
+        </ion-col>
+    </ion-row>
+
+    <ion-row class = "icon-row">
+        <ion-col center text-center>
+          <button (click)= "launchFacebookPage()" round outline>
+              <ion-icon name="logo-facebook"></ion-icon>
+            </button>
+            <ion-label center text-center>Social Media</ion-label>
+        </ion-col>
+
+        <ion-col center text-center>
+            <ion-buttons  donate>
+                <button round outline>
+                    <ion-icon name="logo-usd"></ion-icon>
+                </button>
+
+            </ion-buttons>
+            <ion-label center text-center>Donate</ion-label>
+        </ion-col>
+
+
+        <ion-col center text-center>
+
+            <ion-buttons contact>
+                <button (click)= "sendEmail()" round outline >
+                    <ion-icon name="contact"></ion-icon>
+                </button>
+
+            </ion-buttons>
+
+            <ion-label center text-center>Contact Us</ion-label>
+        </ion-col>
+    </ion-row>
+
+
+
+
+
+
+</ion-content>

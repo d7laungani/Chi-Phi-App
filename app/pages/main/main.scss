@@ -1,0 +1,28 @@
+
+
+.home-container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  height:200%;
+  /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efad62), color-stop(100%,#f7d47c));
+  background: -webkit-linear-gradient(top, #efad62 0%,#f7d47c 100%);*/
+
+  .scroll{
+    height: 100%;
+  }
+  .header {
+    -webkit-flex: 1.5 !important;
+    -webkit-align-items: center;
+
+  }
+  .icon-row {
+    margin-top: 20px;
+    -webkit-align-items: center;
+    margin-bottom: 20px;
+  }
+
+
+}
+.home-container > .row {
+  -webkit-flex: 1;
+}
