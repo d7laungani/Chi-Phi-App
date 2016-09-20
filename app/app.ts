@@ -10,7 +10,7 @@ import {MainPage} from './pages/main/main';
 import {PeopleService} from "./providers/people-service/people-service";
 import {CalendarService} from "./providers/calendar-service/calendar-service";
 import {AboutPage} from './pages/about/about';
-import {ProfilePage} from './pages/profile/profile';
+import {ProfilePage} from './pages/Profile/profile';
 import {GalleryPage} from './pages/gallery/gallery';
 
 @Component({
