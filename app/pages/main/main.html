@@ -6,10 +6,13 @@
   <ion-navbar-buttons side="right">
     <button (click)="auth.login()">Login</button>
   </ion-navbar-buttons>
+
 </ion-navbar>
 <ion-navbar *navbar *ngIf="auth.authenticated()">
   <ion-title>Chi Phi Psi Zeta</ion-title>
-
+  <ion-navbar-buttons side="right">
+    <button (click)="auth.logout()">Logout</button>
+  </ion-navbar-buttons>
 </ion-navbar>
 </ion-header>
 
