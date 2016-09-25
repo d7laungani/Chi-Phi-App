@@ -1,0 +1,41 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.chiphiapprenew291176"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.chiphiapprenew291176"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.chiphiapprenew291176"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionicframework.chiphiapprenew291176"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.chiphiapprenew291176"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.chiphiapprenew291176"
+        },
+        "cordova-plugin-email-composer": {
+            "PACKAGE_NAME": "com.ionicframework.chiphiapprenew291176"
+        },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "602537759906913",
+            "APP_NAME": "Chi",
+            "PACKAGE_NAME": "com.ionicframework.chiphiapprenew291176"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.ionicframework.chiphi.psizeta"
+        }
+    },
+    "dependent_plugins": {}
+}
