@@ -81,6 +81,7 @@ export class AuthService {
   public login() {
     // Show the Auth0 Lock widget
     this.lock.show();
+    
   }
 
   public logout() {
@@ -90,6 +91,8 @@ export class AuthService {
     this.zoneImpl.run(() => this.user = null);
     // Unschedule the token refresh
     this.unscheduleRefresh();
+    console.log("logged out");
+    location.reload();
   }
 
   public scheduleRefresh() {
