@@ -7,6 +7,9 @@
         "files": {}
     },
     "installed_plugins": {
+        "com.sarriaroman.PhotoViewer": {
+            "PACKAGE_NAME": "com.ionicframework.chiphi.psizeta"
+        },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.ionicframework.chiphi.psizeta"
         },

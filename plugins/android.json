@@ -7,33 +7,36 @@
         "files": {}
     },
     "installed_plugins": {
+        "com.sarriaroman.PhotoViewer": {
+            "PACKAGE_NAME": "com.ionicframework.chiphi.psizeta"
+        },
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.ionicframework.chiphiapprenew291176"
+            "PACKAGE_NAME": "com.ionicframework.chiphi.psizeta"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.ionicframework.chiphiapprenew291176"
-        },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.ionicframework.chiphiapprenew291176"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.ionicframework.chiphiapprenew291176"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.chiphiapprenew291176"
-        },
-        "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.chiphiapprenew291176"
+            "PACKAGE_NAME": "com.ionicframework.chiphi.psizeta"
         },
         "cordova-plugin-email-composer": {
-            "PACKAGE_NAME": "com.ionicframework.chiphiapprenew291176"
+            "PACKAGE_NAME": "com.ionicframework.chiphi.psizeta"
         },
         "cordova-plugin-facebook4": {
             "APP_ID": "602537759906913",
             "APP_NAME": "Chi",
-            "PACKAGE_NAME": "com.ionicframework.chiphiapprenew291176"
+            "PACKAGE_NAME": "com.ionicframework.chiphi.psizeta"
         },
         "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.ionicframework.chiphi.psizeta"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.chiphi.psizeta"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionicframework.chiphi.psizeta"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.chiphi.psizeta"
+        },
+        "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.ionicframework.chiphi.psizeta"
         }
     },
