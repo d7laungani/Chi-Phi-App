@@ -1,5 +1,7 @@
 import {Page, Modal, NavController, ViewController, NavParams, Events, Slides} from 'ionic-angular';
 import {Component, Input, EventEmitter, Output, ViewChild, ElementRef}  from '@angular/core';
+import { PhotoViewer } from 'ionic-native';
+
 
 
 @Component({
@@ -83,6 +85,8 @@ export class IonicGallery {
         this.click.emit(item);
     }
 
+
+
     presentImageModal(index: number) {
         let imageModal = Modal.create(ImageView, { items: this.items, options: this.options, index: index });
         console.log("presentImageModal", index, imageModal);
@@ -109,9 +113,9 @@ export class IonicGallery {
 		</ion-buttons>
 	</ion-toolbar>
 	<ion-content>
-		<ion-slides #slider="" [options]="optionSlide" (didChange)="onSlideChanged()">
-			<ion-slide *ngFor="let item of items">
-				<h2 *ngIf="options.titleKey" class="image-title">{{item[options.titleKey]}}</h2><img src="{{item[options.urlKey]}}"/>
+		<ion-slides #slider="" [options]="optionSlide" (didChange)="onSlideChanged()"  >
+			<ion-slide *ngFor="let item of items" (click)="imageTapped(item,options)">
+				<h2 *ngIf="options.titleKey" class="image-title">{{item[options.titleKey]}}</h2> <img src = "{{item[options.urlKey]}}" >
 				<p *ngIf="options.contentKey" (click)="contentOnClick(item)" [ngStyle]="{'max-height': maxHeight}" class="image-content">{{item[options.contentKey]}}</p>
 			</ion-slide>
 		</ion-slides>
@@ -171,7 +175,14 @@ class ImageView {
     dismiss() {
         this.viewCtrl.dismiss();
     }
+  imageTapped(item: any,options: any) {
 
+    var url = item[options.urlKey]
+
+    //console.log(url);
+    PhotoViewer.show(url);
+     //console.log(item[options.urlKey]);
+  }
     callAction(action) {
         if (action.action) {
             let index = this.slider.getActiveIndex() - 1;
@@ -179,6 +190,7 @@ class ImageView {
         }
     }
     contentOnClick(item) {
+        //PhotoViewer.show("item");
         this.showLongContent = !this.showLongContent;
         this.maxHeight = this.showLongContent ? '6em' : '3em'
     }
