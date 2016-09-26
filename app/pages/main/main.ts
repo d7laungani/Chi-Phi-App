@@ -4,7 +4,6 @@ import {EmailComposer} from 'ionic-native';
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
 import {HomePage} from "../home/home";
-import {CalendarPage} from "../calendar/calendar";
 import {AuthService} from '../../services/auth/auth';
 import {GalleryPage} from '../gallery/gallery'
 
@@ -63,10 +62,6 @@ export class MainPage {
         EmailComposer.open(email);
     }
 
-    launchEvents () {
-        console.log("Calendar page coming right up");
-        this.nav.push(CalendarPage);
-    }
     launchGallery () {
       console.log("Gallerypage coming right up");
       this.nav.push(GalleryPage);
