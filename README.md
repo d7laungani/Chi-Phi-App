@@ -2,7 +2,7 @@
 
 Chi Phi app for the Psi Zeta Chapter at the University of Texas at Dallas.
 
-Get node modules by running npm: install
+Get node modules by running: npm install
 
 To run app use command: ionic serve
 
