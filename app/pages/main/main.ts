@@ -21,22 +21,30 @@ export class MainPage {
     }
 
     launchGreeksuite() {
-        InAppBrowser.open("https://greeksuite.io/users/sign_in", "_blank");
+      let browser = new InAppBrowser('https://greeksuite.io/users/sign_in', '_blank');
+      browser.show();
+        //InAppBrowser.open("https://greeksuite.io/users/sign_in", "_blank");
 
     }
 
     launchWebsite() {
-      InAppBrowser.open("https://chiphiutd.com/", "_blank");
+      let browser = new InAppBrowser('https://chiphiutd.com/', '_blank');
+      browser.show();
+      //InAppBrowser.open("https://chiphiutd.com/", "_blank");
 
     }
 
       launchForums() {
-        InAppBrowser.open("https://chiphiutd.com/forums", "_blank");
+        let browser = new InAppBrowser('https://chiphiutd.com/forums', '_blank');
+        browser.show();
+        //InAppBrowser.open("https://chiphiutd.com/forums", "_blank");
 
       }
 
     launchWiki () {
-        InAppBrowser.open("https://chiphiutd.com/wiki/index.php?title=Main_Page ","_blank ");
+      let browser = new InAppBrowser('https://chiphiutd.com/wiki/index.php?title=Main_Page', '_blank');
+      browser.show();
+        //browser.open("https://chiphiutd.com/wiki/index.php?title=Main_Page ","_blank ");
 
     }
 
@@ -69,17 +77,24 @@ export class MainPage {
     }
     launchGallery () {
       console.log("Gallerypage coming right up");
+
       this.nav.push(GalleryPage);
     }
 
   launchFacebookPage () {
-    InAppBrowser.open("fb://profile/351112741602236","_blank ");
+
+    let browser = new InAppBrowser('fb://profile/351112741602236', '_blank');
+    browser.show();
+    //InAppBrowser.open("fb://profile/351112741602236","_blank");
 
   }
 
   launchBoysandGirls () {
-    console.log("Boys and Girls")
-    InAppBrowser.open("http://bgca.convio.net/site/Donation2?df_id=1180&1180.donation=form1","_blank ");
+
+    let browser = new InAppBrowser('http://bgca.convio.net/site/Donation2?df_id=1180&1180.donation=form1', '_blank');
+    browser.show();
+
+    //InAppBrowser.open("http://bgca.convio.net/site/Donation2?df_id=1180&1180.donation=form1","_blank ");
 
   }
 
