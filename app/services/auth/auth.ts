@@ -81,7 +81,7 @@ export class AuthService {
   public login() {
     // Show the Auth0 Lock widget
     this.lock.show();
-    
+
   }
 
   public logout() {
