@@ -57,11 +57,11 @@ export class MainPage {
         });
 
         let email = {
-            to: 'd7laungani@hotmail.com',
+            to: 'technology@chiphiutd.com',
             attachments: [
 
             ],
-            subject: 'Chi Phi App Contact Form',
+            subject: 'Tech Question',
             body: 'Hello,' +
             '',
             isHtml: true
@@ -71,6 +71,28 @@ export class MainPage {
         EmailComposer.open(email);
     }
 
+  emailJboard () {
+
+    EmailComposer.isAvailable().then((available) =>{
+      if(available) {
+        //Now we know we can send
+      }
+    });
+
+    let email = {
+      to: 'jboard@chiphiutd.com',
+      attachments: [
+
+      ],
+      subject: 'App Report Submission',
+      body: 'Dear JBoard,' +
+      '',
+      isHtml: true
+    };
+
+    // Send a text message using default options
+    EmailComposer.open(email);
+  }
     launchEvents () {
         console.log("Calendar page coming right up");
         this.nav.push(CalendarPage);
@@ -83,7 +105,8 @@ export class MainPage {
 
   launchFacebookPage () {
 
-    let browser = new InAppBrowser('fb://profile/351112741602236', '_blank');
+    //let browser = new InAppBrowser('fb://profile/351112741602236', '_blank');
+    let browser = new InAppBrowser('https://www.facebook.com/ChiPhiUTD/?fref=ts', '_blank');
     browser.show();
     //InAppBrowser.open("fb://profile/351112741602236","_blank");
 
