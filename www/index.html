@@ -15,6 +15,10 @@
   <!-- Auth0.js script -->
   <script src="https://cdn.auth0.com/w2/auth0-7.0.3.min.js"></script>
 
+  <!-- Polyfill needed for safari and IOS to support internationalization used in the date pipes -->
+  <script src="build/js/Intl.min.js"></script>
+  <script src="build/js/complete.js"></script>
+
   <!-- Auth0 Lock script -->
   <script src="http://cdn.auth0.com/js/lock/10.0.0/lock.min.js"></script>
 </head>

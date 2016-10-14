@@ -87,7 +87,20 @@ gulp.task('fonts', function(){
     ]
   });
 });
-gulp.task('scripts', copyScripts);
+//gulp.task('scripts', copyScripts);
+gulp.task('scripts', function(){ //new
+  return copyScripts({
+    src: [
+      'node_modules/es6-shim/es6-shim.min.js',
+      'node_modules/es6-shim/es6-shim.map',
+      'node_modules/zone.js/dist/zone.js',
+      'node_modules/reflect-metadata/Reflect.js',
+      'node_modules/reflect-metadata/Reflect.js.map',
+      'node_modules/intl/dist/Intl.min.js',
+      'node_modules/intl/locale-data/complete.js'
+    ]
+  })
+});
 gulp.task('clean', function(){
   return del('www/build');
 });
