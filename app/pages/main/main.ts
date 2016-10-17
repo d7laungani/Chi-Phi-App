@@ -8,6 +8,9 @@ import {CalendarPage} from "../calendar/calendar";
 import {AuthService} from '../../services/auth/auth';
 import {GalleryPage} from '../gallery/gallery'
 
+import { SocialSharing } from 'ionic-native';
+
+
 
 @Component({
     templateUrl: 'build/pages/main/main.html'
@@ -50,48 +53,44 @@ export class MainPage {
 
     sendEmail () {
 
-        EmailComposer.isAvailable().then((available) =>{
-            if(available) {
-                //Now we know we can send
-            }
+      // Check if sharing via email is supported
+      SocialSharing.canShareViaEmail().then(() => {
+        // Sharing via email is possible
+
+        // Share via email
+        SocialSharing.shareViaEmail('Hello,'
+           , 'Tech Question', ['technology@chiphiutd.com']).then(() => {
+          // Success!
+        }).catch(() => {
+          // Error!
         });
 
-        let email = {
-            to: 'technology@chiphiutd.com',
-            attachments: [
+      }).catch(() => {
+        // Sharing via email is not possible
+      });
 
-            ],
-            subject: 'Tech Question',
-            body: 'Hello,' +
-            '',
-            isHtml: true
-        };
 
-        // Send a text message using default options
-        EmailComposer.open(email);
     }
+
 
   emailJboard () {
 
-    EmailComposer.isAvailable().then((available) =>{
-      if(available) {
-        //Now we know we can send
-      }
+    // Check if sharing via email is supported
+    SocialSharing.canShareViaEmail().then(() => {
+      // Sharing via email is possible
+
+      // Share via email
+      SocialSharing.shareViaEmail('Dear JBoard,'
+        , 'App Report Submission', ['jboard@chiphiutd.com']).then(() => {
+        // Success!
+      }).catch(() => {
+        // Error!
+      });
+
+    }).catch(() => {
+      // Sharing via email is not possible
     });
 
-    let email = {
-      to: 'jboard@chiphiutd.com',
-      attachments: [
-
-      ],
-      subject: 'App Report Submission',
-      body: 'Dear JBoard,' +
-      '',
-      isHtml: true
-    };
-
-    // Send a text message using default options
-    EmailComposer.open(email);
   }
     launchEvents () {
         console.log("Calendar page coming right up");
