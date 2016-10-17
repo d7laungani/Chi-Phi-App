@@ -16,11 +16,11 @@ export class CalendarPage {
   }
 
   loadEvents(){
-    console.log("Got called");
+    //console.log("Got called");
     this.calendarService.load()
       .then(data => {
         this.events = data;
-        console.log(data);
+        //console.log(data);
       });
   }
 }
