@@ -106,7 +106,7 @@ export class MainPage {
   launchFacebookPage () {
 
     //let browser = new InAppBrowser('fb://profile/351112741602236', '_blank');
-    let browser = new InAppBrowser('https://www.facebook.com/ChiPhiUTD/?fref=ts', '_blank');
+    let browser = new InAppBrowser('https://www.facebook.com/groups/1562475277366155/', '_blank');
     browser.show();
     //InAppBrowser.open("fb://profile/351112741602236","_blank");
 
